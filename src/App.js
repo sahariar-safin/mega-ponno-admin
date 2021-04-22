@@ -18,6 +18,12 @@ function App() {
         <Route path='/manageproducts'>
           <Home></Home>
         </Route>
+        <Route path='/uploadbanner'>
+          <Home></Home>
+        </Route>
+        <Route path='/orders'>
+          <Home></Home>
+        </Route>
         <Route exact path='/'>
           <Home></Home>
         </Route>

@@ -14,7 +14,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/admin/orders" className="text-dark">
+                    <Link to="/orders" className="text-dark">
                         <span> <FontAwesomeIcon icon={faList} /> Order List</span>
                     </Link>
                 </li>
@@ -26,6 +26,11 @@ const Sidebar = () => {
                 <li>
                     <Link to="/manageproducts" className="text-dark" >
                         <span><FontAwesomeIcon icon={faTasks} />Manage Products</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/uploadbanner" className="text-dark" >
+                        <span><FontAwesomeIcon icon={faTasks} />Upload Banner</span>
                     </Link>
                 </li>
             </ul>
