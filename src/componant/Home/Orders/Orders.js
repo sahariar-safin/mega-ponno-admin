@@ -33,6 +33,9 @@ const Orders = () => {
     return (
         <div className="table-responsive">
             <h1>Orders</h1>
+            <div style={{ height: '200px', width: '400px', backgroundColor: "#42f59b", margin: "15px 0px", borderRadius: '20px', display: "flex", alignItems: "center", justifyContent: 'center' }}>
+                <h1>Total Order: {orders.length}</h1>
+            </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
