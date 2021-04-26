@@ -17,6 +17,8 @@ const AddProduct = () => {
         Data.append('image2', data.image2[0]);
         Data.append("name", data.name);
         Data.append("price", data.price);
+        Data.append("sold", data.sold);
+        Data.append("star", data.star);
         Data.append("originalPrice", data.originalPrice);
         Data.append("productID", Math.random().toString(36).split(".")[1]);
         Data.append("description", data.description)
@@ -53,6 +55,16 @@ const AddProduct = () => {
                 <div class="col-md-12">
                     <label for="inputPrice" class="form-label">Price</label>
                     <input  {...register("price", { required: true })} type="number" class="form-control" id="inputPrice" />
+                </div>
+
+                <div class="col-md-12">
+                    <label for="inputSold" class="form-label">Sold</label>
+                    <input  {...register("sold", { required: true })} type="number" class="form-control" id="inputSold" />
+                </div>
+
+                <div class="col-md-12">
+                    <label for="inputStar" class="form-label">Star (Out of 5)</label>
+                    <input  {...register("star", { required: true })} type="number" class="form-control" id="inputStar" />
                 </div>
 
                 <div class="input-group mb-3">
